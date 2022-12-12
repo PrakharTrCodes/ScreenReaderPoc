@@ -65,6 +65,7 @@ const ImplementingRudder = () => {
         bgColor={'#6979f8'}
         text={'Submit'}
         onPressButton={() => {
+          console.log('onPress call');
           predefinedEvent();
           async () =>
             await analytics().logEvent('basket', {

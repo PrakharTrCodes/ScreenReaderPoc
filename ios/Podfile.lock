@@ -179,6 +179,14 @@ PODS:
     - GoogleUtilities/Logger
   - hermes-engine (0.70.6)
   - libevent (2.1.12)
+  - MoEngage-iOS-SDK (8.4.2)
+  - MoEngageInApp (3.4.1):
+    - MoEngage-iOS-SDK (< 8.5.0, >= 8.4.0)
+  - MoEngagePluginBase (3.1.0):
+    - MoEngage-iOS-SDK (< 8.5.0, >= 8.4.0)
+    - MoEngageInApp (< 3.5.0, >= 3.4.0)
+  - MoEngageRichNotification (6.4.0):
+    - MoEngage-iOS-SDK (< 8.5.0, >= 8.4.0)
   - nanopb (2.30909.0):
     - nanopb/decode (= 2.30909.0)
     - nanopb/encode (= 2.30909.0)
@@ -488,6 +496,10 @@ PODS:
     - React-jsi (= 0.70.6)
     - React-logger (= 0.70.6)
     - React-perflogger (= 0.70.6)
+  - ReactNativeMoEngage (8.1.2):
+    - MoEngagePluginBase (< 3.2.0, >= 3.1.0)
+    - MoEngageRichNotification (< 6.5.0, >= 6.4.0)
+    - React
   - RNFBAnalytics (16.4.6):
     - Firebase/Analytics (= 10.2.0)
     - React-Core
@@ -574,6 +586,7 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
+  - ReactNativeMoEngage (from `../node_modules/react-native-moengage`)
   - "RNFBAnalytics (from `../node_modules/@react-native-firebase/analytics`)"
   - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
   - "RNRudderSdk (from `../node_modules/@rudderstack/rudder-sdk-react-native`)"
@@ -603,6 +616,10 @@ SPEC REPOS:
     - GoogleDataTransport
     - GoogleUtilities
     - libevent
+    - MoEngage-iOS-SDK
+    - MoEngageInApp
+    - MoEngagePluginBase
+    - MoEngageRichNotification
     - nanopb
     - OpenSSL-Universal
     - PromisesObjC
@@ -683,6 +700,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
+  ReactNativeMoEngage:
+    :path: "../node_modules/react-native-moengage"
   RNFBAnalytics:
     :path: "../node_modules/@react-native-firebase/analytics"
   RNFBApp:
@@ -722,6 +741,10 @@ SPEC CHECKSUMS:
   GoogleUtilities: bad72cb363809015b1f7f19beb1f1cd23c589f95
   hermes-engine: 2af7b7a59128f250adfd86f15aa1d5a2ecd39995
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913
+  MoEngage-iOS-SDK: 3d9dacbd19aee086da5fa65689318eb2e99ec1e1
+  MoEngageInApp: 92b431d7553fa8bfa3a8f6aadef6025a791bb073
+  MoEngagePluginBase: 37e91da79b3e34f825e3b4a847581845c9d26082
+  MoEngageRichNotification: 2c59fd714be6f84e97b1aa639860c529ea553f0e
   nanopb: b552cce312b6c8484180ef47159bc0f65a1f0431
   OpenSSL-Universal: ebc357f1e6bc71fa463ccb2fe676756aff50e88c
   PromisesObjC: ab77feca74fa2823e7af4249b8326368e61014cb
@@ -755,6 +778,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: c75ceef7aa60a33b2d5731ebe5800ddde40cefc4
   React-runtimeexecutor: 15437b576139df27635400de0599d9844f1ab817
   ReactCommon: 349be31adeecffc7986a0de875d7fb0dcf4e251c
+  ReactNativeMoEngage: d664bf3d7576c5cb648ba598a28436b2bb7c9961
   RNFBAnalytics: 7be58d245091b76071d31bc763a702b13f322b4c
   RNFBApp: a6a92a67882cde38e6b466a446312de6c6c9b384
   RNRudderSdk: 14c176adb1557f3832cb385fcd14250f76a7e268
