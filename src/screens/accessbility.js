@@ -17,8 +17,9 @@ const ImplementingRudder = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const predefinedEvent = async () => {
-    await analytics().logLogin({
-      method: 'facebook',
+    rudderClient.identify('user123', {
+      name: 'Alex Keener',
+      email: 'alex@example.com',
     });
   };
 
@@ -74,7 +75,19 @@ const ImplementingRudder = () => {
               description: ['round neck', 'long sleeved'],
               size: 'L',
             });
-          rudderClient.track('basket', {
+          rudderClient.track('Here track', {
+            test_key_1: 'test_value_1',
+            test_key_2: {
+              test_child_key_1: 'test_child_value_1',
+            },
+          });
+          rudderClient.track('Here track1', {
+            test_key_1: 'test_value_1',
+            test_key_2: {
+              test_child_key_1: 'test_child_value_1',
+            },
+          });
+          rudderClient.track('Here track2', {
             test_key_1: 'test_value_1',
             test_key_2: {
               test_child_key_1: 'test_child_value_1',
