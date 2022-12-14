@@ -7,7 +7,7 @@ const Profile = () => {
   console.log('jdgffgehwgdgy');
   return (
     <SafeAreaView>
-      <Text>{'This is Profile'}</Text>
+      <Text>{'This is Profile--> Kamal'}</Text>
       <TouchableOpacity
         onPress={() => {
           console.log('hello');
