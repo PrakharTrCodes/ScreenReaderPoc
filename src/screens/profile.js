@@ -10,7 +10,8 @@ const Profile = () => {
       <TouchableOpacity
         onPress={() => {
           console.log('hello');
-          navigation.navigate('Accessibility');
+        //   navigation.navigate('Accessibility');
+          navigation.goBack();
         }}>
         <Text>{'Back'}</Text>
       </TouchableOpacity>
