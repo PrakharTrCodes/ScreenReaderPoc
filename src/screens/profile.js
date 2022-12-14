@@ -4,6 +4,7 @@ import {SafeAreaView, TouchableOpacity, Text} from 'react-native';
 const Profile = () => {
   const navigation = useNavigation();
   console.log('hello');
+  console.log('jdgffgehwgdgy');
   return (
     <SafeAreaView>
       <Text>{'This is Profile'}</Text>
