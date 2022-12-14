@@ -6,6 +6,7 @@ import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import ImplementingRudder from '../screens/accessbility';
 import rudderClient from '@rudderstack/rudder-sdk-react-native';
+import Profile from '../screens/profile';
 
 function HomeScreen() {
   const navigation = useNavigation();
@@ -15,6 +16,7 @@ function HomeScreen() {
   //     console.log('URL', url);
   //   },
   // );
+  console.log('dfghjkl');
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <TouchableOpacity
@@ -22,6 +24,12 @@ function HomeScreen() {
           navigation.navigate('Accessibility');
         }}>
         <Text>{'go to access'}</Text>
+      </TouchableOpacity>
+      <TouchableOpacity
+        onPress={() => {
+          navigation.navigate('Profile');
+        }}>
+        <Text>{'go to profile'}</Text>
       </TouchableOpacity>
     </View>
   );
@@ -59,6 +67,7 @@ function Router() {
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Accessibility" component={ImplementingRudder} />
+        <Stack.Screen name="Profile" component={Profile} />
       </Stack.Navigator>
     </NavigationContainer>
   );
