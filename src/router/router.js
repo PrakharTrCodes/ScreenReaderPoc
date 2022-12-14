@@ -16,6 +16,7 @@ function HomeScreen() {
   //     console.log('URL', url);
   //   },
   // );
+  console.log('dfghjkl');
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <TouchableOpacity
@@ -30,7 +31,6 @@ function HomeScreen() {
         }}>
         <Text>{'go to profile'}</Text>
       </TouchableOpacity>
-      
     </View>
   );
 }
