@@ -7,6 +7,9 @@ import Spacer from '../spacer';
 export default () => {
   const [date, setDate] = useState(new Date());
   const [open, setOpen] = useState(false);
+  console.log(
+    'Check all the dates of the data , and employ within and get all the related information',
+  );
 
   return (
     <View style={styles.main}>

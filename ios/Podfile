@@ -35,6 +35,7 @@ target 'ScreenReaderPOC' do
   pod 'GoogleUtilities', :modular_headers => true
   pod 'FirebaseCore', :modular_headers => true
   pod 'FirebaseMessaging', :modular_headers => true
+  pod 'Firebase/Analytics'
 
   post_install do |installer|
     react_native_post_install(

@@ -99,7 +99,33 @@ const ImplementingRudder = () => {
         disableColor={'grey'}
       />
       <Spacer largest />
+      <CustomButton
+        accessibilityLabel="Another track"
+        textColor="white"
+        bgColor={'#6979f8'}
+        text={'Another track'}
+        onPressButton={() => {
+          console.log('onPress call');
 
+          async () =>
+            await analytics().logEvent('basket', {
+              id: 3745092,
+              item: 'mens grey t-shirt',
+              description: ['round neck', 'long sleeved'],
+              size: 'L',
+            });
+          rudderClient.track('another tracking button', {
+            test_key_1: 'test_value_1',
+            test_key_2: {
+              test_child_key_1: 'test_child_value_1',
+            },
+          });
+        }}
+        width={'90%'}
+        disable={false}
+        disableColor={'grey'}
+      />
+      <Spacer largest />
       <AccessibleSwitch />
       <TermAndCondition isVisible={isVisible} setIsVisible={setIsVisible} />
     </View>

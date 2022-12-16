@@ -1,41 +1,34 @@
 {
   "project_info": {
-    "project_number": "96140993365",
-    "project_id": "rudderstackpoc",
-    "storage_bucket": "rudderstackpoc.appspot.com"
+    "project_number": "444709894298",
+    "project_id": "propertyhere---ga4",
+    "storage_bucket": "propertyhere---ga4.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:96140993365:android:37dbea10a4654cb16085dc",
+        "mobilesdk_app_id": "1:444709894298:android:835b37a9bdd07afd168723",
         "android_client_info": {
           "package_name": "com.screenreaderpoc"
         }
       },
       "oauth_client": [
         {
-          "client_id": "96140993365-vpdb0iqhi6bua8u46ftuer7mu6a2id4s.apps.googleusercontent.com",
+          "client_id": "444709894298-2fq60vrshfesmd8ohovj63kkk9tgh2oe.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAQmsrSPWXxYKn1o1uYibTFSwYxPuBZpCw"
+          "current_key": "AIzaSyD3tJc60QoWBFF4baFkqeXkQscvhMoYEdc"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "96140993365-vpdb0iqhi6bua8u46ftuer7mu6a2id4s.apps.googleusercontent.com",
+              "client_id": "444709894298-2fq60vrshfesmd8ohovj63kkk9tgh2oe.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "96140993365-ap9unhtck9bpcn1k473ea5u8oibdqnio.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "org.reactjs.native.example.ScreenReaderPOC"
-              }
             }
           ]
         }
